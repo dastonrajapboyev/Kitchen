@@ -111,7 +111,7 @@ a {
   .logo-img {
     width: 103px;
     object-fit: cover;
-    margin-left: -80px;
+    margin-left: -50px;
   }
   .profile {
     gap: 10px;

@@ -93,7 +93,7 @@
     top: 320px;
 
     bottom: 0;
-    left: 290px;
+    left: 200px;
     width: 124px;
     /* height: 180px; */
     object-fit: cover;
@@ -104,7 +104,7 @@
   .absolute-img_2 img {
     width: 140px;
     position: absolute;
-    left: 360px;
+    left: 300px;
     top: -100px;
   }
   .absolute-img_3 {
