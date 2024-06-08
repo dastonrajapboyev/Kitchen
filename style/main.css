@@ -1,0 +1,41 @@
+.main {
+  width: 100%;
+  background-color: #b0cc0d;
+  border-radius: 55px;
+  margin-top: 59px;
+}
+.left-side {
+  padding: 54px 0 47px 102px;
+}
+.left-title {
+  width: 400px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.left-info {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 59px;
+  letter-spacing: 0%;
+  margin: 20px 0;
+}
+.left-btn {
+}
+.btn {
+}
+.right-side {
+}
+.main-img {
+}
+.absolute-img_1 {
+}
+.absolute-img_2 {
+}
