@@ -10,6 +10,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="./style/index.css" />
     <title>Vite App</title>
   </head>
@@ -54,7 +59,7 @@
             </div>
           </div>
         </nav>
-        <main class="main">
+        <main class="main bg-primary">
           <div class="left-side">
             <div class="left-title">Your personal cook</div>
             <div class="left-info">The balanced diet for every day</div>
@@ -62,13 +67,171 @@
           </div>
           <div class="right-side">
             <div class="main-img">
-              <img src="" alt="" />
+              <img src="./assets/images/main-img.png" alt="" />
+              <div class="small-img">
+                <img src="./assets/images/small-img.png" alt="" />
+              </div>
             </div>
-            <div class="absolute-img_1"></div>
-            <div class="absolute-img_2"></div>
-            <div class="absolute-img_2"></div>
+          </div>
+          <div class="absolute-img_1">
+            <img src="./assets/images/1-absolute-img.png" alt="" />
+          </div>
+          <div class="absolute-img_2">
+            <img src="./assets/images/2-absolute-img.png" alt="" />
+          </div>
+          <div class="absolute-img_3">
+            <img src="./assets/images/3-absolute-img.png" alt="" />
           </div>
         </main>
+
+        <section class="menu-section">
+          <img
+            class="corner-flower"
+            src="./assets/Icons/menu-icons/corner's-flower.png"
+            alt="" />
+          <h1 class="menu-title">OUR MENU</h1>
+          <div class="menu-section_nav">
+            <div style="color: white" class="menu-nav_item bg-primary">
+              POWER <span>1800 CKAL</span>
+            </div>
+            <div class="menu-nav_item actived">
+              POWER <span>1800 CKAL</span>
+            </div>
+            <div class="menu-nav_item">POWER <span>1800 CKAL</span></div>
+            <div class="menu-nav_item">POWER <span>1800 CKAL</span></div>
+            <div class="menu-nav_item">POWER <span>1800 CKAL</span></div>
+            <div class="menu-nav_item">POWER <span>1800 CKAL</span></div>
+            <div class="menu-nav_item">POWER <span>1800 CKAL</span></div>
+          </div>
+
+          <div class="menu-page bg-primary">
+            <div class="menu-weeks_row">
+              <div style="background-color: white" class="weekdays">Monday</div>
+              <div class="weekdays">Monday</div>
+              <div class="weekdays">Monday</div>
+              <div class="weekdays">Monday</div>
+              <div class="weekdays">Monday</div>
+              <div class="weekdays">Monday</div>
+              <div class="weekdays">Monday</div>
+              <div class="weeks-slide">
+                <img src="./assets/Icons/menu-icons/arrow-left.svg" alt="" />
+                <div class="week-title">WEEK 1 <span>this week</span></div>
+                <img src="./assets/Icons/menu-icons/arrow-right.svg" alt="" />
+              </div>
+            </div>
+            <div class="menu-cards swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide card">
+                  <span>01</span>
+                  <div class="card-img">
+                    <img src="./assets/images/card-img/01.png" alt="" />
+                  </div>
+                  <div class="card-title">BREAKFAST 2</div>
+                  <div class="card-sub-title">
+                    Chicken fricassee with mushrooms and bulgur
+                  </div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                </div>
+                <div class="swiper-slide card">
+                  <span>02</span>
+                  <div class="card-img">
+                    <img src="./assets/images/card-img/01.png" alt="" />
+                  </div>
+                  <div class="card-title">BREAKFAST 2</div>
+                  <div class="card-sub-title">
+                    Chicken fricassee with mushrooms and bulgur
+                  </div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                </div>
+                <div class="swiper-slide card">
+                  <span>03</span>
+                  <div class="card-img">
+                    <img src="./assets/images/card-img/01.png" alt="" />
+                  </div>
+                  <div class="card-title">BREAKFAST 2</div>
+                  <div class="card-sub-title">
+                    Chicken fricassee with mushrooms and bulgur
+                  </div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                </div>
+                <div class="swiper-slide card">
+                  <span>04</span>
+                  <div class="card-img">
+                    <img src="./assets/images/card-img/01.png" alt="" />
+                  </div>
+                  <div class="card-title">BREAKFAST 2</div>
+                  <div class="card-sub-title">
+                    Chicken fricassee with mushrooms and bulgur
+                  </div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                </div>
+                <div class="swiper-slide card">
+                  <span>05</span>
+                  <div class="card-img">
+                    <img src="./assets/images/card-img/01.png" alt="" />
+                  </div>
+                  <div class="card-title">BREAKFAST 2</div>
+                  <div class="card-sub-title">
+                    Chicken fricassee with mushrooms and bulgur
+                  </div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                </div>
+                <div class="swiper-slide card">
+                  <span>06</span>
+                  <div class="card-img">
+                    <img src="./assets/images/card-img/01.png" alt="" />
+                  </div>
+                  <div class="card-title">BREAKFAST 2</div>
+                  <div class="card-sub-title">
+                    Chicken fricassee with mushrooms and bulgur
+                  </div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                  <div class="card-info">Piyoz 100g</div>
+                </div>
+                <!-- More cards -->
+              </div>
+              <!-- Swiper navigation buttons -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <!-- Swiper pagination -->
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+
+            <div class="menu-text">
+              A balanced menu helps to maintain health and a slim figure, allows
+              you to be cheerful and active throughout the week. While preparing
+              our dishes, we use products from the best suppliers and always
+              choose products that correspond to the concept of healthy
+              nutrition. For example, lean beef, turkey and chicken, low-calorie
+              sauces, pasta of hard varieties. Delivery is carried out every 2
+              days.
+            </div>
+            <div class="menu-footer"></div>
+          </div>
+        </section>
       </div>
     </div>
     <script type="module" src="/main.js"></script>

@@ -1,9 +1,11 @@
 @import "../style/main.css";
+@import "../style/menu.css";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 ul,
 li {
@@ -19,6 +21,10 @@ a {
   padding: 8px 27px;
   background: rgb(255, 168, 0);
   color: #fff;
+}
+.bg-primary {
+  border-radius: 55px;
+  background: rgb(176, 204, 13);
 }
 .container {
   max-width: 1200px;
@@ -122,6 +128,7 @@ a {
     border: 1px solid #ccc;
     padding: 2rem;
     border-radius: 5px;
+    z-index: 1;
   }
   .nav-items.active {
     display: flex;
