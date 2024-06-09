@@ -1,6 +1,6 @@
 .menu-section {
   position: relative;
-  margin: 200px 0;
+  margin: 200px 0 100px 0;
 }
 .menu-section_nav {
   display: flex;
@@ -145,7 +145,7 @@
 }
 .swiper-container {
   width: 100%;
-  padding: 0 60px;
+  padding: 0 0px;
   overflow: hidden;
 }
 
@@ -168,7 +168,7 @@
 .swiper-button-prev {
   padding: 30px;
   background-color: lightgray;
-  margin-top: 100px;
+  margin-top: 0px;
   color: #fff;
   border-radius: 50%;
 }
@@ -194,10 +194,20 @@
   .swiper-button-prev {
     margin-top: -100px;
   }
+  .bottom-leaves {
+    display: none;
+  }
 }
 
 /* ========== */
-
+.menu-page {
+  position: relative;
+}
+.bottom-leaves {
+  position: absolute;
+  left: 600px;
+  bottom: -90px;
+}
 .menu-footer {
   display: flex;
   gap: 30px;
@@ -251,8 +261,15 @@
   }
   .meat {
     flex-direction: column;
+    align-items: center;
+  }
+  .meat-info {
+    text-align: center;
   }
   .meat img {
     width: 32px;
+  }
+  .card {
+    width: 290px !important;
   }
 }
