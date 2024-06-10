@@ -1,0 +1,137 @@
+.get-in_touch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.get-in_touch__img img {
+  width: 450px;
+}
+.get-in_touch__info {
+}
+.get-in_touch__title {
+  color: rgb(176, 204, 13);
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.get-in_touch__text {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.get-in_touch__contact {
+  position: relative;
+}
+.abso-img {
+  position: absolute;
+  width: 213px;
+  top: -170px;
+  left: 180px;
+}
+.get-in_touch_inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.get-in_touch__input1,
+.get-in_touch__input2 {
+  flex: 1 1 45%;
+  min-width: 45%;
+  border-radius: 32px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.05);
+  background: rgb(244, 244, 244);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+}
+
+.get-in_touch__input3 {
+  flex: 1 1 100%;
+  min-width: 100%;
+  border-radius: 32px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.05);
+  background: rgb(244, 244, 244);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+}
+.get-in_touch__buttons {
+  display: flex;
+  margin-top: 23px;
+  gap: 2px;
+}
+.get-in_touch_btn1 {
+  border-radius: 32px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  background: rgb(255, 168, 0);
+  cursor: pointer;
+}
+.get-in_touch_btn2 {
+  border-radius: 32px;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  background: rgb(176, 204, 13);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .get-in_touch {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .get-in_touch__img img {
+    width: 300px;
+  }
+  .get-in_touch__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .get-in_touch__text {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .abso-img {
+    display: none;
+  }
+  .get-in_touch_inputs {
+    margin-top: 20px;
+  }
+  .get-in_touch__input1,
+  .get-in_touch__input2 {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+  .get-in_touch__input1,
+  .get-in_touch__input2,
+  .get-in_touch__input3 {
+    padding: 18px 27px;
+  }
+  .get-in_touch__input3 {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+  .get-in_touch__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+  }
+  .get-in_touch_btn1,
+  .get-in_touch_btn2 {
+    padding: 18px 27px;
+  }
+}

@@ -168,7 +168,7 @@
 .swiper-button-prev {
   padding: 30px;
   background-color: lightgray;
-  margin-top: 0px;
+  margin-top: -100px;
   color: #fff;
   border-radius: 50%;
 }
@@ -192,7 +192,7 @@
   }
   .swiper-button-next,
   .swiper-button-prev {
-    margin-top: -100px;
+    margin-top: -300px;
   }
   .bottom-leaves {
     display: none;
