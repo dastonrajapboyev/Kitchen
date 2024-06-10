@@ -1,0 +1,138 @@
+.footer {
+  padding: 63px 0 26px 0;
+  position: relative;
+  background-color: #b0cc0d;
+  overflow-x: hidden;
+}
+.footer-row {
+  display: flex;
+}
+.footer-col_socials {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.footer-col_socials__icons {
+  margin-top: 38px;
+  color: #fff;
+}
+.footer-col_socials__icons i:not(:first-child) {
+  margin-left: 20px;
+}
+
+.footer-col_socials__date {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: 0%;
+  margin-top: 52px;
+}
+.footer-col_menu {
+  margin-left: 122px;
+  display: flex;
+}
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer-menu_link {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer-menu_text {
+  width: 187px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 25px;
+}
+.footer-privacy {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer-col_address {
+  margin-left: 179px;
+}
+.footer-addresses {
+  display: flex;
+  gap: 20px;
+}
+.address-name {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.developer {
+  display: flex;
+  margin-top: 87px;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0%;
+  align-items: center;
+}
+.footer-img {
+  position: absolute;
+  top: -100px;
+  right: -200px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    overflow: visible;
+    margin-top: 66px;
+    padding: 0 20px;
+  }
+  .footer-row {
+    flex-direction: column;
+  }
+  .footer-col_menu,
+  .footer-col_address {
+    margin-left: 0;
+  }
+  .footer-col_socials__logo {
+    margin-top: 29px;
+  }
+  .footer-img {
+    display: none;
+  }
+  .developer {
+    padding-bottom: 80px;
+  }
+  .footer-col_socials__date {
+    position: absolute;
+    top: 580px;
+  }
+  .footer-menu {
+    margin-top: 48px;
+  }
+  .footer-menu_text {
+    padding-bottom: 20px;
+  }
+  .footer-privacy {
+    font-size: 14px;
+  }
+}

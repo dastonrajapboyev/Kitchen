@@ -62,13 +62,13 @@
   .recommend-img_1 img {
     width: 240px;
     top: -60px;
-    left: 80px;
+    left: 150px;
     z-index: 1000;
   }
   .recommend-img_2 img {
     width: 300px;
     top: 20px;
-    left: -100px;
+    left: -80px;
   }
   .recommend-title {
     width: 100%;

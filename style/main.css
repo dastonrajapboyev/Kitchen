@@ -90,10 +90,10 @@
   }
   .small-img img {
     position: absolute;
-    top: 320px;
+    top: 280px;
 
     bottom: 0;
-    left: 200px;
+    left: 240px;
     width: 104px;
     /* height: 180px; */
     object-fit: cover;
