@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  display: flex;
+}
+.account-left img {
+  height: 100%;
+}
+.account-right {
+  margin-left: 203px;
+}
+.lang {
+  text-align: right;
+  margin-right: -130px;
+  margin-top: 43px;
+  padding-right: 120px;
+}
+.lang-2 {
+  margin-right: -250px;
+}
+.account-logo {
+  margin-top: 301px;
+}
+.account-title {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-top: 58px;
+  font-weight: bold;
+  margin-bottom: 33px;
+}
+.account-btn_1,
+.account-btn_2 {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  border-radius: 6px;
+  background: rgb(142, 192, 56);
+  text-align: center;
+  padding: 13px 77px;
+  cursor: pointer;
+}
+
+.account-btn_2 {
+  margin-top: 15px;
+}
+.developer {
+  display: flex;
+  margin-top: 180px;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0%;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .account-left {
+    display: none;
+  }
+  .account-right {
+    position: relative;
+    width: 100%;
+    margin-left: 0px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .lang {
+    position: absolute;
+    margin-right: 0;
+    right: 20px;
+    text-align: right;
+    margin-top: 26px;
+    font-weight: bold;
+    padding-right: 0;
+  }
+  .account-logo {
+    margin-top: 71px;
+  }
+  .account-logo img {
+    width: 182px;
+  }
+  .account-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    margin-top: 29px;
+  }
+  .account-btn_1,
+  .account-btn_2 {
+    font-size: 12px;
+    padding: 12px 18px;
+  }
+}

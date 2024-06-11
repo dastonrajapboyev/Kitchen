@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.email-input {
+  width: 400px;
+  background-color: rgb(233, 237, 244);
+  border: none;
+  outline: none;
+  padding: 13px 20px;
+  border-radius: 6px;
+  margin-top: 61px;
+}
+.with-email a,
+p {
+  color: rgb(172, 182, 190);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+}
+.with-email p {
+  margin: 7px 0px 32px 20px;
+}
+.forget-password {
+  display: flex;
+  justify-content: center;
+  margin: 45px 0 11px 0;
+  color: rgb(173, 173, 173);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.sign-up_btn {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.sign-in_btn p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.sign-in_btn a {
+  color: rgb(48, 86, 211);
+}
+@media screen and (max-width: 768px) {
+  .email-input {
+    width: 100%;
+    background-color: rgb(233, 237, 244);
+    border: none;
+    outline: none;
+    padding: 13px 20px;
+    border-radius: 6px;
+    margin-top: 61px;
+  }
+}
