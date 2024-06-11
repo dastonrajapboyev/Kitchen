@@ -138,3 +138,15 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+// navigate account.html
+function navigateToAccount() {
+  window.location.href = "./public/account.html";
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const signInBtn = document.querySelector(".sign-in_btn");
+  if (signInBtn) {
+    signInBtn.addEventListener("click", navigateToAccount);
+  }
+});
