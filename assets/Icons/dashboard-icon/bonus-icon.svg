@@ -1,0 +1,14 @@
+<svg width="34.000000" height="34.000000" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip768_105">
+			<rect id="mdi:star-four-points-circle" width="34.000000" height="34.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="mdi:star-four-points-circle" width="34.000000" height="34.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip768_105)">
+		<path id="Vector" d="M11.57 3.91C13.29 3.2 15.13 2.83 17 2.83C18.85 2.83 20.69 3.2 22.42 3.91C24.14 4.61 25.69 5.66 27.01 6.98C28.33 8.3 29.38 9.85 30.08 11.57C30.79 13.3 31.16 15.14 31.16 17C31.16 20.75 29.67 24.36 27.01 27.01C25.7 28.33 24.14 29.37 22.42 30.09C20.7 30.8 18.86 31.16 17 31.16C15.13 31.16 13.29 30.79 11.57 30.09C9.85 29.37 8.29 28.33 6.98 27.01C5.66 25.7 4.62 24.14 3.91 22.42C3.19 20.7 2.83 18.86 2.83 17C2.83 13.24 4.32 9.63 6.98 6.98C8.3 5.66 9.86 4.61 11.57 3.91ZM17 24.08L19.21 19.23L24.08 17L19.21 14.79L17 9.91L14.77 14.79L9.91 17L14.77 19.23L17 24.08Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

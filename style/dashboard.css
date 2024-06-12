@@ -1,0 +1,43 @@
+.settings-page {
+  width: 203px;
+  /* padding: 30px 0 51px 27px; */
+  margin-top: 77px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.13);
+  background: rgb(255, 255, 255);
+}
+.dashboard {
+}
+.dashboard-menu_items {
+  padding: 30px 0 51px 27px;
+}
+.dashboard-menu_item {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.dashboard-menu_item:not(:first-child) {
+  margin-top: 33px;
+}
+.dashboard-menu_link {
+}
+.settings {
+  margin-top: 374px;
+}
+.dashboard-menu_settings {
+  background: rgb(244, 244, 244);
+  display: flex;
+  gap: 19px;
+  padding: 17px 0 12px 27px;
+}
+.dashboard-profile {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 17px 0 51px 27px;
+}
+.dashboard-profile img {
+  width: 40px;
+}
+.dashboard-profile_name {
+}
