@@ -141,7 +141,7 @@ for (i = 0; i < coll.length; i++) {
 
 // navigate account.html
 function navigateToAccount() {
-  window.location.href = "./public/account.html";
+  window.location.href = "./account.html";
 }
 
 document.addEventListener("DOMContentLoaded", function () {
