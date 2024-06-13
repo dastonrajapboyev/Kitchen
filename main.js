@@ -150,3 +150,73 @@ document.addEventListener("DOMContentLoaded", function () {
     signInBtn.addEventListener("click", navigateToAccount);
   }
 });
+
+// modal
+document.addEventListener("DOMContentLoaded", function () {
+  let modal = document.getElementById("modal");
+  let addressIcon = document.getElementById("address-icon");
+  let closeModal = document.getElementById("close-modal");
+
+  addressIcon.addEventListener("click", function () {
+    modal.classList.add("active");
+  });
+
+  closeModal.addEventListener("click", function () {
+    modal.classList.remove("active");
+  });
+
+  // Optionally, close modal when clicking outside of it
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.classList.remove("active");
+    }
+  });
+});
+
+// close modal
+document.addEventListener("DOMContentLoaded", function () {
+  let modal = document.getElementById("modal");
+  let addressIcon = document.getElementById("address-icon");
+  let closeModal = document.getElementById("close-modal");
+
+  addressIcon.addEventListener("click", function () {
+    modal.classList.add("active");
+  });
+
+  closeModal.addEventListener("click", function () {
+    modal.classList.remove("active");
+  });
+
+  // Optionally, close modal when clicking outside of it
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.classList.remove("active");
+    }
+  });
+});
+
+// --------------------------
+// document.addEventListener("DOMContentLoaded", function () {
+//   var modal = document.getElementById("modal");
+//   var addressIcon = document.getElementById("address-icon");
+//   var closeModal = document.getElementById("close-modal");
+//   var body = document.body;
+
+//   addressIcon.addEventListener("click", function () {
+//     modal.classList.add("active");
+//     body.classList.add("blur");
+//   });
+
+//   closeModal.addEventListener("click", function () {
+//     modal.classList.remove("active");
+//     body.classList.remove("blur");
+//   });
+
+//   // Optionally, close modal when clicking outside of it
+//   window.addEventListener("click", function (event) {
+//     if (event.target === modal) {
+//       modal.classList.remove("active");
+//       body.classList.remove("blur");
+//     }
+//   });
+// });

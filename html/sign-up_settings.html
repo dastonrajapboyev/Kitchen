@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="settings-wrapper">
+      <div class="settings-wrapper main-content">
         <nav class="nav">
           <div class="burger-menu">
             <img
@@ -94,17 +94,199 @@
             </div>
           </div>
           <!-- end of menu dasboard -->
-        </div>
-        <div class="settings-right_side">
-          <div class="settings-header">
-            <div class="settings-title">Settings Page</div>
-            <div class="settings-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              ultrices lectus sem.
+          <div class="settings-right_side">
+            <div class="settings-header">
+              <div class="settings-title title-size">Settings Page</div>
+              <div class="settings-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                ultrices lectus sem.
+              </div>
+            </div>
+
+            <div class="bonus-box">
+              <div class="bonus-title title-size">Бонусы</div>
+              <div class="bonus-row">
+                <div class="bonus-icon">
+                  <img
+                    src="../assets/Icons/dashboard-icon/bonus-icon.svg"
+                    alt="" />
+                  <p>456 бонусов</p>
+                </div>
+                <div class="bonus-text">
+                  Вы можете потратить эти бонусы бла-бла-бла
+                </div>
+              </div>
+            </div>
+
+            <div class="account-information">
+              <div class="account-information_title">Account Information</div>
+              <div style="align-items: center" class="item-row">
+                <form action="/submit" method="post">
+                  <div class="dashboard-inputs">
+                    <div class="input-group">
+                      <label for="firstName">First Name</label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        required />
+
+                      <label for="email">Email Address</label>
+                      <input type="email" id="email" name="email" required />
+                    </div>
+                  </div>
+                </form>
+                <form action="/submit" method="post">
+                  <div class="dashboard-inputs">
+                    <div class="input-group">
+                      <label for="firstName">Last Name</label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        required />
+                      <label for="email">Telegream</label>
+                      <input type="text" id="email" name="email" required />
+                    </div>
+                    <br /><br />
+                  </div>
+                </form>
+                <div class="user-profile_img">
+                  <img
+                    src="../assets/images/dashboard-img/progile-img.png"
+                    alt="img" />
+                  <div class="user-profile_icon">
+                    <img
+                      src="../assets/Icons/dashboard-icon/camera-icon.svg"
+                      alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="account-information_title">Delivery information</div>
+              <div class="item-row">
+                <form action="/submit" method="post">
+                  <div class="dashboard-inputs">
+                    <div class="input-group">
+                      <label for="firstName">Street Address</label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        required />
+
+                      <label for="email">Street Address</label>
+                      <input type="email" id="email" name="email" required />
+                    </div>
+                  </div>
+                </form>
+                <form action="/submit" method="post">
+                  <div class="dashboard-inputs">
+                    <div class="input-group">
+                      <label for="firstName">Street Address</label>
+                      <div class="third-input">
+                        <input
+                          style="border: none; outline: none"
+                          type="text"
+                          id="firstName"
+                          name="firstName"
+                          required />
+                        <img
+                          src="../assets/Icons/dashboard-icon/address-icon.svg"
+                          alt=""
+                          id="address-icon" />
+                      </div>
+                      <label for="email">Street Address</label>
+                      <input type="text" id="email" name="email" required />
+                    </div>
+                    <br /><br />
+                  </div>
+                </form>
+              </div>
+              <div class="account-information_title">Password</div>
+              <div class="item-row">
+                <form action="/submit" method="post">
+                  <div class="dashboard-inputs">
+                    <div class="input-group">
+                      <label for="firstName">Current Password</label>
+                      <input
+                        type="password"
+                        id="firstName"
+                        name="firstName"
+                        required />
+
+                      <label for="email">New Password</label>
+                      <input type="password" id="email" name="email" required />
+                    </div>
+                  </div>
+                </form>
+                <form action="/submit" method="post">
+                  <div class="dashboard-inputs">
+                    <div class="input-group">
+                      <label for="firstName">Re-type New Password</label>
+                      <input
+                        type="password"
+                        id="firstName"
+                        name="firstName"
+                        required />
+                    </div>
+                    <br /><br />
+                  </div>
+                </form>
+              </div>
+
+              <!-- log out -->
+              <div class="log-out_box">
+                <div class="log-out_title">Log Out</div>
+                <div class="log-out_info">
+                  <div class="log-out_Text">
+                    Lorem ipsum dolor sit amet consectetur. Non nunc est nulla
+                    urna. Cras vestibulum scelerisque volutpat eget sociis et ut
+                    morbi commodo. At feugiat non quis aliquam enim et. Posuere
+                    integer tortor elementum eu.
+                  </div>
+                  <div class="log-out_btn">
+                    <img
+                      src="../assets/Icons/dashboard-icon/logOut-icon.svg"
+                      alt="log out icon" />
+                    <p>Выход</p>
+                  </div>
+                </div>
+                <a href="#" class="update-btn">Update Now</a>
+              </div>
+
+              <div class="modal" id="modal">
+                <div class="modal-header">
+                  <div class="modal-title">Заголовок</div>
+                  <img
+                    src="../assets/Icons/dashboard-icon/x-icon.svg"
+                    alt=""
+                    id="close-modal" />
+                </div>
+                <div class="modal-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                  ultrices lectus sem.
+                </div>
+                <div class="modal-input_box">
+                  <input
+                    type="text"
+                    class="modal-input"
+                    placeholder="Введите адрес" />
+                  <img
+                    src="../assets/Icons/dashboard-icon/carbon_search.svg"
+                    alt="" />
+                </div>
+                <div class="modal-map">
+                  <img
+                    src="../assets/images/dashboard-img/map-icon.png"
+                    alt="map-icon" />
+                </div>
+                <div class="modal-btn">Cохранить</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
