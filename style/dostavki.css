@@ -1,0 +1,62 @@
+.dostavki-container {
+  width: 100%;
+  display: flex;
+  gap: 102px;
+  padding-bottom: 73px;
+}
+#calendar {
+  width: 895px;
+  margin-top: 34px;
+}
+
+.fc-today-button {
+  display: none !important;
+}
+
+.fc .fc-button-group {
+  gap: 31.5px;
+}
+.fc-direction-ltr .fc-button-group > .fc-button:not(:last-child),
+.fc-direction-ltr .fc-button-group > .fc-button:not(:first-child) {
+  background-color: transparent;
+  color: rgb(255, 168, 0);
+  border: 1px solid rgb(255, 168, 0);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  #calendar {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 34px;
+  }
+  .logo-2 {
+    margin-left: -80px;
+  }
+  .fc-direction-ltr .fc-button-group > .fc-button:not(:last-child),
+  .fc-direction-ltr .fc-button-group > .fc-button:not(:first-child) {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+  .fc .fc-button-group {
+    gap: 16px;
+  }
+  .fc .fc-toolbar-title {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1170px) {
+  div.fc-view.fc-agendaDay-view.fc-agenda-view table {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1170px) {
+  div.fc-view-container {
+    overflow-x: scroll;
+  }
+  div.fc-view.fc-agendaDay-view.fc-agenda-view table {
+    min-width: 1170px;
+  }
+}

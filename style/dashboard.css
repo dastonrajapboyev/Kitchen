@@ -24,6 +24,13 @@
   margin-top: 33px;
 }
 .dashboard-menu_link {
+  color: rgb(48, 41, 41);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
 }
 .settings {
   margin-top: 374px;
@@ -53,8 +60,7 @@
 .settings-right_side {
   margin-left: 102px;
 }
-.settings-header {
-}
+
 .settings-title {
   color: rgb(33, 43, 54);
   font-family: Montserrat;
@@ -66,6 +72,7 @@
   font-weight: bold;
 }
 .settings-text {
+  width: 571px;
   color: rgb(99, 115, 129);
   font-family: Montserrat;
   font-size: 14px;
@@ -131,8 +138,7 @@
   padding: 18px 29px;
   gap: 24px;
 }
-.account-information form {
-}
+
 .user-profile_img {
   position: relative;
   margin-left: 20px;
@@ -235,29 +241,15 @@
 
 /* modal */
 
-.modal {
-  /* display: flex;
-  flex-direction: column;
-  width: 573px;
-  padding: 34px;
-  border: 1px solid red; */
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border: 1px solid #ccc;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  padding: 20px;
+body {
+  font-family: Arial, sans-serif;
+  transition: filter 0.3s;
 }
-.modal.active {
-  display: block;
-}
-body.modal-active .content {
+
+body.blurred {
   filter: blur(5px);
 }
+
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -299,43 +291,157 @@ body.modal-active .content {
   margin-top: 18px;
   width: 100%;
 }
-.modal-input_box input {
-  border: none;
-  overflow: hidden;
-  outline: none;
-  flex: 1 0 90%;
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 20px;
 }
+
+.modal.active {
+  display: block;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-input_box,
+.modal-map,
 .modal-btn {
-  border-radius: 8px;
-  margin: 0 auto;
-  margin-top: 16px;
-  padding: 18px 27px;
+  margin-top: 20px;
+}
+
+.modal-btn {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
   text-align: center;
-  width: 241px;
-  background: rgb(255, 168, 0);
-  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
   .settings-page {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    margin-top: 20px;
     /* padding: 0 20px; */
     width: 100%;
+  }
+  .dashboard {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    height: 50px;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+  }
+
+  .dashboard-profile_name {
+    display: none;
+  }
+  .dashboard-menu_link {
+    font-size: 12px;
+  }
+  .settings {
+    display: flex;
+    margin: 0;
+    gap: 40px;
+    height: 35px;
+  }
+
+  .dashboard-menu_settings img {
+    width: 25px;
+    height: 25px;
+  }
+  .dashboard-menu_settings {
+    width: 30px;
+    display: block;
+    background-color: transparent;
+    padding: 0 10px;
   }
   .account-information {
     padding: 0 20px;
   }
+  .dashboard-menu_items {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  .dashboard-menu_item {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .dashboard-menu_item:not(:first-child) {
+    margin: 0;
+  }
+  .dashboard-menu_settings img {
+    margin-top: 4px;
+  }
+  .dashboard-profile {
+    margin-top: 4px;
+    padding: 0;
+  }
+  .dashboard-profile img {
+    margin-top: 6px;
+  }
+  .dashboard-menu_settings a {
+    margin-top: -5px;
+  }
   .item-row {
+    width: 100%;
     flex-direction: column;
     margin: 0 auto;
   }
+  .bonus-text {
+    width: 100%;
+    margin-left: 10px;
+  }
+  .input-group {
+    width: 100%;
+  }
+  .dashboard-inputs label,
+  .dashboard-inputs input,
+  .settings-header {
+    width: 100%;
+  }
+  .settings-header,
+  .bonus-box {
+    padding: 20px;
+  }
+  .third-input {
+    width: 100%;
+  }
   .log-out_btn {
     margin-left: 0;
+  }
+  .log-out_info {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .log-out_Text {
+    width: 100%;
   }
   .update-btn {
     margin-left: 0;
   }
   .settings-right_side {
     margin-left: 0px;
+  }
+  .modal {
+    width: 90%;
+  }
+  .settings-text {
+    width: 100%;
   }
 }

@@ -195,28 +195,46 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// --------------------------
-// document.addEventListener("DOMContentLoaded", function () {
-//   var modal = document.getElementById("modal");
-//   var addressIcon = document.getElementById("address-icon");
-//   var closeModal = document.getElementById("close-modal");
-//   var body = document.body;
+const logoImg = document.querySelector(".logo-img");
 
-//   addressIcon.addEventListener("click", function () {
-//     modal.classList.add("active");
-//     body.classList.add("blur");
-//   });
+// Add a click event listener to the image element
+logoImg.addEventListener("click", function () {
+  // Navigate to the main page (e.g., index.html)
+  window.location.href = "index.html";
+});
 
-//   closeModal.addEventListener("click", function () {
-//     modal.classList.remove("active");
-//     body.classList.remove("blur");
-//   });
+////////////////////////
 
-//   // Optionally, close modal when clicking outside of it
-//   window.addEventListener("click", function (event) {
-//     if (event.target === modal) {
-//       modal.classList.remove("active");
-//       body.classList.remove("blur");
-//     }
-//   });
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  var calendarEl = document.getElementById("calendar");
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: "dayGridMonth",
+    dateClick: function (info) {
+      // Show the modal
+      var modal = document.getElementById("modal");
+      var selectedDate = document.getElementById("selected-date");
+      selectedDate.textContent = info.dateStr;
+      modal.style.display = "block";
+
+      // Save event button click handler
+      document.getElementById("save-event").onclick = function () {
+        var time = document.getElementById("event-time").value;
+        if (time) {
+          var eventTime = info.dateStr + "T" + time + ":00";
+          calendar.addEvent({
+            title: "New Event",
+            start: eventTime,
+          });
+        }
+        modal.style.display = "none";
+      };
+    },
+  });
+  calendar.render();
+
+  // Close modal functionality
+  document.getElementById("close-modal").addEventListener("click", function () {
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
+  });
+});

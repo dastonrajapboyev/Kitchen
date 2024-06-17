@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.14/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.14/index.global.min.js"></script>
+    <link rel="stylesheet" href="../style/index.css" />
+    <style>
+      .modal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        background: white;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+      }
+
+      .modal-title {
+        font-size: 20px;
+      }
+
+      .modal-text {
+        margin-top: 20px;
+      }
+
+      .modal-input_box {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .modal-input_box input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .modal-btn {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: #007bff;
+        color: white;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+      .modal-btn:hover {
+        background: #0056b3;
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="settings-wrapper main-content">
+        <nav class="nav">
+          <div class="burger-menu">
+            <img
+              id="burger-icon"
+              src="./assets/Icons/circum_menu-fries.svg"
+              alt="" />
+          </div>
+          <div class="logo logo-2">
+            <img class="logo-img" src="../assets/images/logo-1.png" alt="" />
+          </div>
+          <ul class="nav-items">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Delivery</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+          <div class="profile">
+            <div class="phone">
+              <i class="fa-sharp fa-solid fa-phone-volume"></i>
+              591 902 883
+            </div>
+            <div class="lang">
+              EN <i class="fas fa-regular fa-chevron-down"></i>
+            </div>
+            <div class="sign-in">
+              <a class="sign-in_btn" href="./account.html">
+                <img src="../assets/Icons/user.svg" alt="icon" />
+                <span> SIGN IN </span>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="settings-page dostavki-container">
+          <div class="dashboard">
+            <div class="dashboard-menu_items">
+              <div class="dashboard-menu_item">
+                <img src="../assets/Icons/dashboard-icon/01.svg" alt="" />
+                <a href="#" class="dashboard-menu_link">Меню</a>
+              </div>
+              <div class="dashboard-menu_item">
+                <img src="../assets/Icons/dashboard-icon/02.svg" alt="" />
+                <a href="#" class="dashboard-menu_link">Заказы</a>
+              </div>
+              <div class="dashboard-menu_item">
+                <img src="../assets/Icons/dashboard-icon/03.svg" alt="" />
+                <a href="#" class="dashboard-menu_link">Доставки</a>
+              </div>
+            </div>
+            <div class="settings">
+              <div class="dashboard-menu_settings">
+                <img
+                  src="../assets/Icons/dashboard-icon/free-icon-settings-503822.svg"
+                  alt="" />
+                <a href="#" class="dashboard-menu_link">Настройки</a>
+              </div>
+              <div class="dashboard-profile">
+                <img
+                  src="../assets/images/dashboard-img/progile-img.png"
+                  alt="profile-img" />
+                <div class="dashboard-profile_name">Иван Иванов</div>
+              </div>
+            </div>
+          </div>
+          <div class="settings-right_side">
+            <div class="settings-header">
+              <div class="settings-title title-size">Settings Page</div>
+              <div class="settings-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+                ultrices lectus sem.
+              </div>
+            </div>
+
+            <div id="calendar"></div>
+            <div class="modal" id="modal">
+              <div class="modal-header">
+                <div class="modal-title">Select Date and Time</div>
+                <img
+                  src="../assets/Icons/dashboard-icon/x-icon.svg"
+                  alt="Close"
+                  id="close-modal"
+                  style="cursor: pointer" />
+              </div>
+              <div class="modal-text">
+                Please select a time for your event on
+                <span id="selected-date"></span>.
+              </div>
+              <div class="modal-input_box">
+                <label for="event-time">Time:</label>
+                <input type="time" id="event-time" />
+              </div>
+              <div class="modal-btn" id="save-event">Save Event</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: "dayGridMonth",
+          dateClick: function (info) {
+            // Show the modal
+            var modal = document.getElementById("modal");
+            var selectedDate = document.getElementById("selected-date");
+            selectedDate.textContent = info.dateStr;
+            modal.style.display = "block";
+
+            // Save event button click handler
+            document.getElementById("save-event").onclick = function () {
+              var time = document.getElementById("event-time").value;
+              if (time) {
+                var eventTime = info.dateStr + "T" + time + ":00";
+                calendar.addEvent({
+                  title: "New Event",
+                  start: eventTime,
+                });
+              }
+              modal.style.display = "none";
+            };
+          },
+        });
+        calendar.render();
+
+        // Close modal functionality
+        document
+          .getElementById("close-modal")
+          .addEventListener("click", function () {
+            var modal = document.getElementById("modal");
+            modal.style.display = "none";
+          });
+      });
+
+      // Select the image element
+      const logoImg = document.querySelector(".logo-img");
+
+      // Add a click event listener to the image element
+      logoImg.addEventListener("click", function () {
+        // Navigate to the main page (e.g., index.html)
+        window.location.href = "index.html";
+      });
+    </script>
+  </body>
+</html>

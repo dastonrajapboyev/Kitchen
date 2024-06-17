@@ -67,7 +67,7 @@
             <div class="dashboard-menu_items">
               <div class="dashboard-menu_item">
                 <img src="../assets/Icons/dashboard-icon/01.svg" alt="" />
-                <a href="#" class="dashboard-menu_link">Меню</a>
+                <a href="menu.html" class="dashboard-menu_link">Меню</a>
               </div>
               <div class="dashboard-menu_item">
                 <img src="../assets/Icons/dashboard-icon/02.svg" alt="" />
@@ -75,7 +75,9 @@
               </div>
               <div class="dashboard-menu_item">
                 <img src="../assets/Icons/dashboard-icon/03.svg" alt="" />
-                <a href="#" class="dashboard-menu_link">Доставки</a>
+                <a href="./dostavki.html" class="dashboard-menu_link"
+                  >Доставки</a
+                >
               </div>
             </div>
             <div class="settings">
@@ -287,6 +289,15 @@
         </div>
       </div>
     </div>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/main.js">
+      // Select the image element
+      const logoImg = document.querySelector('.logo-img');
+
+      // Add a click event listener to the image element
+      logoImg.addEventListener('click', function() {
+        // Navigate to the main page (e.g., index.html)
+        window.location.href = 'index.html';
+      });
+    </script>
   </body>
 </html>
