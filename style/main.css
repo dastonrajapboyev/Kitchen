@@ -64,7 +64,23 @@
   left: 400px;
   top: 330px;
 }
-
+@media screen and (max-width: 1200px) {
+  .main {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .main-img img {
+    position: absolute;
+    width: 566px;
+    margin-left: -150px;
+  }
+  .small-img img {
+    top: 400px;
+    bottom: 0;
+    left: 370px;
+    width: 244px;
+  }
+}
 @media screen and (max-width: 768px) {
   .main {
     flex-direction: column;

@@ -273,3 +273,12 @@
     width: 290px !important;
   }
 }
+@media screen and (max-width: 1200px) {
+  .corner-flower {
+    right: 100px;
+  }
+  .menu-footer {
+    width: 100%;
+    margin: 20px 0;
+  }
+}

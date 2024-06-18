@@ -63,15 +63,19 @@
             <div class="dashboard-menu_items">
               <div class="dashboard-menu_item">
                 <img src="../assets/Icons/dashboard-icon/01.svg" alt="" />
-                <a href="#" class="dashboard-menu_link">Меню</a>
+                <a href="./sign-up_settings.html" class="dashboard-menu_link"
+                  >Меню</a
+                >
               </div>
               <div class="dashboard-menu_item">
                 <img src="../assets/Icons/dashboard-icon/02.svg" alt="" />
-                <a href="#" class="dashboard-menu_link">Заказы</a>
+                <a href="./order.html" class="dashboard-menu_link">Заказы</a>
               </div>
               <div class="dashboard-menu_item">
                 <img src="../assets/Icons/dashboard-icon/03.svg" alt="" />
-                <a href="#" class="dashboard-menu_link">Доставки</a>
+                <a href="./dostavki.html" class="dashboard-menu_link"
+                  >Доставки</a
+                >
               </div>
             </div>
             <div class="settings">
@@ -328,7 +332,9 @@
                         </div>
                         <div class="order-btn2">
                           <p class="p">Добавить закуски</p>
-                          <div class="order-button">Заказать</div>
+                          <a href="./billing.html" class="order-button"
+                            >Заказать</a
+                          >
                         </div>
                       </div>
                     </div>
@@ -341,10 +347,11 @@
               Внешний вид блюда может отличаться от фотографии на сайте.
             </div>
           </div>
-          <div class="modal-2" id="modal-2">
+          <div class="modal-2 modal modal-content" id="myModal">
             <div class="modal-header">
               <div class="modal-title">Замена блюда</div>
               <img
+                class="close"
                 src="../assets/Icons/dashboard-icon/x-icon.svg"
                 alt=""
                 id="close-modal" />
@@ -541,6 +548,33 @@
         // Navigate to the main page (e.g., index.html)
         window.location.href = "index.html";
       });
+
+      var modal = document.getElementById("myModal");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // Get all elements with the class "dash-menu_breakfastName"
+      var items = document.getElementsByClassName("dash-menu_breakfastName");
+
+      // Add click event listener to each item
+      for (var i = 0; i < items.length; i++) {
+        items[i].onclick = function () {
+          modal.style.display = "block";
+        };
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
     </script>
   </body>
 </html>

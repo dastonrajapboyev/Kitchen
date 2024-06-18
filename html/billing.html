@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Page</title>
+    <link rel="stylesheet" href="../style/billing.css" />
+    <link rel="stylesheet" href="../style/index.css" />
+  </head>
+  <body>
+    <div class="wrapper-billing">
+      <nav class="nav">
+        <div class="burger-menu">
+          <img
+            id="burger-icon"
+            src="./assets/Icons/circum_menu-fries.svg"
+            alt="" />
+        </div>
+        <div class="logo logo-2">
+          <img class="logo-img" src="../assets/images/logo-1.png" alt="" />
+        </div>
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Delivery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contacts</a>
+          </li>
+        </ul>
+        <div class="profile">
+          <div class="phone">
+            <i class="fa-sharp fa-solid fa-phone-volume"></i>
+            591 902 883
+          </div>
+          <div class="lang">
+            EN <i class="fas fa-regular fa-chevron-down"></i>
+          </div>
+          <div class="sign-in">
+            <a class="sign-in_btn" href="./account.html">
+              <img src="../assets/Icons/user.svg" alt="icon" />
+              <span> SIGN IN </span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="wrapper-billing-2">
+        <div class="dashboard">
+          <div class="dashboard-menu_items">
+            <div class="dashboard-menu_item">
+              <img src="../assets/Icons/dashboard-icon/01.svg" alt="" />
+              <a href="./menu.html" class="dashboard-menu_link">Меню</a>
+            </div>
+            <div class="dashboard-menu_item">
+              <img src="../assets/Icons/dashboard-icon/02.svg" alt="" />
+              <a href="./billing.html" class="dashboard-menu_link">Заказы</a>
+            </div>
+            <div class="dashboard-menu_item">
+              <img src="../assets/Icons/dashboard-icon/03.svg" alt="" />
+              <a href="./dostavki.html" class="dashboard-menu_link">Доставки</a>
+            </div>
+          </div>
+          <div class="settings">
+            <div class="dashboard-menu_settings">
+              <img
+                src="../assets/Icons/dashboard-icon/free-icon-settings-503822.svg"
+                alt="" />
+              <a href="#" class="dashboard-menu_link">Настройки</a>
+            </div>
+            <div class="dashboard-profile">
+              <img
+                src="../assets/images/dashboard-img/progile-img.png"
+                alt="profile-img" />
+              <div class="dashboard-profile_name">Иван Иванов</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="billing-details">
+            <h1>Заголовок</h1>
+            <p>Другой текст описание или что-то еще</p>
+            <div class="section">
+              <h2>1. Billing Details</h2>
+              <form>
+                <div class="form-box">
+                  <div class="form-box-1">
+                    <div class="form-group">
+                      <label for="firstName">First name*</label>
+                      <input type="text" id="firstName" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email*</label>
+                      <input type="email" id="email" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="address">Address*</label>
+                      <input type="text" id="address" required />
+                    </div>
+                  </div>
+                  <div class="form-box-2">
+                    <div class="form-group">
+                      <label for="phone">Phone*</label>
+                      <input class="sec-input" type="tel" id="phone" required />
+                    </div>
+                    <div class="form-group">
+                      <label for="intercom">Код домофона</label>
+                      <input type="text" id="intercom" />
+                    </div>
+                    <div class="form-group">
+                      <label for="liftCode">Код от лифта</label>
+                      <input type="text" id="liftCode" />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group form-last">
+                  <label for="additionalInfo">Additional information</label>
+                  <input type="text" id="additionalInfo" />
+                </div>
+                <button type="submit" class="order-button">
+                  Place an Order
+                </button>
+              </form>
+              <div class="payment-navigation">
+                <a href="./payment.html"
+                  >1. Payment
+                  <img
+                    src="../assets/Icons/dashy-menu-icons/chevron-down.svg"
+                    alt=""
+                /></a>
+                <a href="bonus.html"
+                  >1. Deduct bonus points
+                  <img
+                    src="../assets/Icons/dashy-menu-icons/chevron-down.svg"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="order-summary">
+            <h2>Your Order</h2>
+            <div class="order-item">
+              <img
+                src="../assets/images/order-img/01.png"
+                alt="Product Image" />
+              <div>
+                <p>Hollow Port</p>
+                <p>Brown XL</p>
+                <p>1 x $36.00</p>
+              </div>
+              <p>$36.00</p>
+            </div>
+            <div class="order-item">
+              <img
+                src="../assets/images/order-img/01.png"
+                alt="Product Image" />
+              <div>
+                <p>Hollow Port</p>
+                <p>Brown XL</p>
+                <p>1 x $36.00</p>
+              </div>
+              <p>$36.00</p>
+            </div>
+            <div class="order-item">
+              <img
+                src="../assets/images/order-img/01.png"
+                alt="Product Image" />
+              <div>
+                <p>Hollow Port</p>
+                <p>Brown XL</p>
+                <p>1 x $36.00</p>
+              </div>
+              <p>$36.00</p>
+            </div>
+            <hr />
+            <div class="totals">
+              <p>Subtotal: $108</p>
+              <p>Shipping Cost (+): $10.85</p>
+              <p>Discount (-): $9.00</p>
+              <p><strong>Total Payable: $88.15</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

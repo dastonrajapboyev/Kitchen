@@ -107,6 +107,18 @@ a {
 .sign-in_btn img {
   color: #fff;
 }
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    padding: 0 20px;
+  }
+  .profile {
+    margin-left: 0;
+  }
+  .nav-item {
+    margin: 0 20px;
+  }
+}
 @media screen and (min-width: 768px) {
   .burger-menu {
     display: none;

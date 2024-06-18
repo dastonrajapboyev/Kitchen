@@ -86,3 +86,14 @@
     padding: 0 20px;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .recommend-img_1 img {
+    left: 320px;
+    width: 400px;
+  }
+  .recommend-img_2 img {
+    left: 520px;
+    width: 450px;
+  }
+}

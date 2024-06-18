@@ -133,3 +133,10 @@
     padding: 18px 27px;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .abso-img {
+    width: 150px;
+    left: 80px;
+  }
+}
